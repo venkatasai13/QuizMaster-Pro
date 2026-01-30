@@ -1,20 +1,117 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+## QuizMaster Pro – Dynamic Quiz Application
+## Project Overview
 
-# Run and deploy your AI Studio app
+QuizMaster Pro is a dynamic quiz application built using React and JavaScript.
+The application allows users to select quiz categories and difficulty levels, attempt timed questions, and view detailed result analysis after completing the quiz.
 
-This contains everything you need to run your app locally.
+The project focuses on real-time logic, clean UI design, result analytics, and automation-friendly structure, making it suitable for both development and testing scenarios.
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## Tech Stack
 
-## Run Locally
+Frontend: React, TypeScript, JavaScript, HTML, CSS (Tailwind CSS)
 
-**Prerequisites:**  Node.js
+Charts & Analytics: Recharts
+
+Automation Testing: Selenium WebDriver (Java)
+
+IDE: VS Code / Eclipse / IntelliJ
+
+Version Control: Git & GitHub
+
+## Key Features
+
+Category & difficulty-based quiz selection
+
+One question displayed at a time
+
+Countdown timer for each question
+
+Auto-submit when timer reaches zero
+
+Tracks time spent per question
+
+Calculates total score and accuracy
+
+Visual result analysis using charts
+
+Responsive design (Desktop & Mobile)
+
+Automation-ready UI with stable selectors
+
+## Timer Functionality
+
+Each question has a fixed timer (configurable)
+
+Timer resets automatically for every new question
+
+If time runs out, the question is auto-submitted
+
+Time spent per question is recorded accurately
+
+## Result Analysis
+
+After quiz completion, the application displays:
+
+Total score
+
+Accuracy percentage
+
+Correct vs Incorrect answers (Pie Chart)
+
+Time spent per question (Bar Chart)
+
+Detailed per-question breakdown
+
+ Automation Testing Scope
+
+Selenium automation scripts validate:
+
+Application launch & page load
+
+Quiz start and question navigation
+
+Answer selection
+
+Quiz submission
+
+Result page verification (score, accuracy, charts)
+
+Screenshots, logs, and screen recordings are captured during automation execution as part of testing documentation.
+
+ ## How to Run the Project Locally
+
+Clone the repository:
+
+git clone https://github.com/your-username/quizmaster-pro.git
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Navigate to the project directory:
+
+cd quizmaster-pro
+
+
+Install dependencies:
+
+npm install
+
+
+Start the application:
+
+npm start
+
+
+## Open in browser:
+
+http://localhost:3000
+
+ Project Structure
+src/
+ ├── components/
+ │   ├── Layout.tsx
+ │   ├── SetupForm.tsx
+ │   ├── QuizCard.tsx
+ │   └── ResultsView.tsx
+ ├── constants.ts
+ ├── types.ts
+ ├── App.tsx
+ └── index.tsx
